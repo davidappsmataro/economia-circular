@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="David Pecharromán" />
+    <meta
+      name="description"
+      content="Blog de economía circular: un modelo para un futuro sostenible"
+    />
+    <title>Blog</title>
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+  </head>
+  <body class="blog">
+    <include src="./views/header.html"></include>
+    <div class="blog__banner-container">
+      <picture>
+        <source
+          media="(min-width: 1201px)"
+          srcset="
+            assets/images/banner-blog.png?as=webp&width=2000 2000w,
+            assets/images/banner-blog.png?as=webp&width=1750 1750w,
+            assets/images/banner-blog.png?as=webp&width=1375 1375w,
+            assets/images/banner-blog.png?as=webp&width=1200 1200w
+          "
+          sizes="100vw"
+          type="image/webp"
+        />
+
+        <source
+          media="(min-width: 1201px)"
+          srcset="
+            assets/images/banner-blog.png?width=2000 2000w,
+            assets/images/banner-blog.png?width=1750 1750w,
+            assets/images/banner-blog.png?width=1375 1375w,
+            assets/images/banner-blog.png?width=1200 1200w
+          "
+          sizes="100vw"
+          type="image/png"
+        />
+        <source
+          media="(min-width: 993px)"
+          srcset="
+            assets/images/banner-blog.png?as=webp&width=1200 1200w,
+            assets/images/banner-blog.png?as=webp&width=1100 1100w,
+            assets/images/banner-blog.png?as=webp&width=992   992w
+          "
+          sizes="100vw"
+          type="image/webp"
+        />
+
+        <source
+          media="(min-width: 993px)"
+          srcset="
+            assets/images/banner-blog.png?width=1200 1200w,
+            assets/images/banner-blog.png?width=1100 1100w,
+            assets/images/banner-blog.png?width=992   992w
+          "
+          sizes="100vw"
+          type="image/png"
+        />
+        <source
+          media="(min-width: 769px)"
+          srcset="
+            assets/images/banner-blog.png?as=webp&width=992 992w,
+            assets/images/banner-blog.png?as=webp&width=768 768w
+          "
+          sizes="100vw"
+          type="image/webp"
+        />
+
+        <source
+          media="(min-width: 769px)"
+          srcset="
+            assets/images/banner-blog.png?width=992 992w,
+            assets/images/banner-blog.png?width=768 768w
+          "
+          sizes="100vw"
+          type="image/png"
+        />
+        <source
+          media="(max-width: 768px)"
+          srcset="
+            assets/images/banner-blog.png?as=webp&width=992 992w,
+            assets/images/banner-blog.png?as=webp&width=768 768w,
+            assets/images/banner-blog.png?as=webp&width=640 640w,
+            assets/images/banner-blog.png?as=webp&width=480 480w
+          "
+          sizes="100vw"
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 768px)"
+          srcset="
+            assets/images/banner-blog.png?width=992 992w,
+            assets/images/banner-blog.png?width=768 768w,
+            assets/images/banner-blog.png?width=640 640w,
+            assets/images/banner-blog.png?width=480 480w
+          "
+          sizes="100vw"
+          type="image/png"
+        />
+
+        <img
+          class="main__section-cartel"
+          src="assets/images/banner-blog.png"
+          alt="Banner de Economia Circular"
+          fetchpriority="high"
+          loading="lazy"
+        />
+      </picture>
+      <!-- <img
+        class="blog__banner-img"
+        src="/src/assets/images/banner-blog.png"
+        alt="Logo Economía Circular"
+      /> -->
+    </div>
+    <main class="blog__main">
+      <h1 class="blog__main-title">
+        La Economía Circular: Un Modelo para un Futuro Sostenible
+      </h1>
+      <div class="blog__main-intro">
+        <p class="blog__main-intro-text blog__main-intro-text--resaltado">
+          <cite>
+            En un mundo donde los recursos naturales son cada vez más limitados,
+            la economía circular se presenta como una solución innovadora para
+            enfrentar los desafíos ambientales y económicos del siglo XXI.
+          </cite>
+        </p>
+        <p class="blog__main-intro-text">
+          En un mundo donde los recursos naturales son cada vez más limitados,
+          la economía circular se presenta como una solución innovadora para
+          enfrentar los desafíos ambientales y económicos del siglo XXI. Este
+          modelo propone un cambio radical en la forma en que producimos y
+          consumimos, pasando de un sistema lineal de "usar y desechar" a uno
+          circular, donde los materiales y productos se reutilizan, reparan y
+          reciclan.
+        </p>
+      </div>
+      <hr class="blog__main-separator" />
+      <section class="blog__main-section-pilares">
+        <h2 class="blog__main-section-pilares-subtitle">
+          Pilares de la Economía Circular
+        </h2>
+        <ol class="blog__main-section-pilares-list">
+          <li class="blog__main-section-pilares-list-item">
+            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="25" cy="25" r="20" fill="#009c84" />
+              <text
+                x="25"
+                y="32.5"
+                text-anchor="middle"
+                font-size="20"
+                fill="#ffffff"
+                font-family="Arial"
+              >
+                1
+              </text>
+            </svg>
+
+            <strong class="blog__main-section-pilares-list-item-title"
+              >Maximización del valor de los recursos</strong
+            >
+            <p class="blog__main-section-pilares-list-item-text">
+              La economía circular busca extender el ciclo de vida de los
+              productos mediante la reutilización, reparación y reciclaje,
+              reduciendo así los residuos y optimizando el uso de materiales.
+            </p>
+          </li>
+          <li class="blog__main-section-pilares-list-item">
+            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="25" cy="25" r="20" fill="#009c84" />
+              <text
+                x="25"
+                y="32.5"
+                text-anchor="middle"
+                font-size="20"
+                fill="#ffffff"
+                font-family="Arial"
+              >
+                2
+              </text>
+            </svg>
+            <strong class="blog__main-section-pilares-list-item-title"
+              >Impacto positivo en el cambio climático</strong
+            >
+            <p class="blog__main-section-pilares-list-item-text">
+              Al disminuir la extracción de materias primas y las emisiones
+              asociadas a la producción, este modelo contribuye
+              significativamente a la reducción de gases de efecto invernadero.
+            </p>
+          </li>
+          <li class="blog__main-section-pilares-list-item">
+            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="25" cy="25" r="20" fill="#009c84" />
+              <text
+                x="25"
+                y="32.5"
+                text-anchor="middle"
+                font-size="20"
+                fill="#ffffff"
+                font-family="Arial"
+              >
+                3
+              </text>
+            </svg>
+            <strong class="blog__main-section-pilares-list-item-title"
+              >Colaboración y educación</strong
+            >
+            <p class="blog__main-section-pilares-list-item-text">
+              Para que la economía circular sea efectiva, es esencial la
+              cooperación entre gobiernos, empresas y ciudadanos, junto con la
+              promoción de la educación y la sensibilización sobre prácticas
+              sostenibles.
+            </p>
+          </li>
+        </ol>
+      </section>
+      <hr class="blog__main-separator" />
+      <article class="blog__main-article">
+        <h2 class="blog__main-article-title">
+          La Importancia de la Economía Circular
+        </h2>
+        <p class="blog__main-article-text">
+          La economía circular no solo busca reducir los residuos, sino también
+          maximizar el valor de los recursos a lo largo de su ciclo de vida.
+          Esto implica diseñar productos más duraderos, fomentar la
+          reutilización de materiales y promover la innovación en procesos
+          industriales. Sectores como la moda, la tecnología y la construcción
+          ya están adoptando prácticas circulares, demostrando que es posible
+          combinar sostenibilidad con rentabilidad.
+        </p>
+        <figure class="text-center mt-2">
+          <blockquote class="blockquote">
+            <p class="fw-bold">
+              En la naturaleza no existe el concepto de residuo; todo es un
+              recurso.
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            William McDonough, coautor de
+            <cite>Cradle to Cradle: Remaking the Way We Make Things.</cite>
+          </figcaption>
+        </figure>
+
+        <figure class="blog__main-article-figure figure">
+          <!--  <img
+            src="/src/assets/images/blog/economia.png"
+            class="blog__main-article-img figure-img img-fluid rounded"
+            alt="Economia Circular"
+            loading="lazy"
+          /> -->
+          <picture>
+            <source
+              media="(min-width: 1201px)"
+              srcset="
+                assets/images/blog/economia.png?as=webp&width=2000 2000w,
+                assets/images/blog/economia.png?as=webp&width=1750 1750w,
+                assets/images/blog/economia.png?as=webp&width=1375 1375w,
+                assets/images/blog/economia.png?as=webp&width=1200 1200w
+              "
+              sizes="100vw"
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 1201px)"
+              srcset="
+                assets/images/blog/economia.png?width=2000 2000w,
+                assets/images/blog/economia.png?width=1750 1750w,
+                assets/images/blog/economia.png?width=1375 1375w,
+                assets/images/blog/economia.png?width=1200 1200w
+              "
+              sizes="100vw"
+              type="image/jpeg"
+            />
+            <source
+              media="(min-width: 993px)"
+              srcset="
+                assets/images/blog/economia.png?as=webp&width=1200 1200w,
+                assets/images/blog/economia.png?as=webp&width=1100 1100w,
+                assets/images/blog/economia.png?as=webp&width=992   992w
+              "
+              sizes="100vw"
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 993px)"
+              srcset="
+                assets/images/blog/economia.png?width=1200 1200w,
+                assets/images/blog/economia.png?width=1100 1100w,
+                assets/images/blog/economia.png?width=992   992w
+              "
+              sizes="100vw"
+              type="image/jpeg"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="
+                assets/images/blog/economia.png?as=webp&width=992 992w,
+                assets/images/blog/economia.png?as=webp&width=768 768w
+              "
+              sizes="100vw"
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 769px)"
+              srcset="
+                assets/images/blog/economia.png?width=992 992w,
+                assets/images/blog/economia.png?width=768 768w
+              "
+              sizes="100vw"
+              type="image/jpeg"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="
+                assets/images/blog/economia.png?as=webp&width=992 992w,
+                assets/images/blog/economia.png?as=webp&width=768 768w,
+                assets/images/blog/economia.png?as=webp&width=640 640w,
+                assets/images/blog/economia.png?as=webp&width=480 480w
+              "
+              sizes="100vw"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="
+                assets/images/blog/economia.png?width=992 992w,
+                assets/images/blog/economia.png?width=768 768w,
+                assets/images/blog/economia.png?width=640 640w,
+                assets/images/blog/economia.png?width=480 480w
+              "
+              sizes="100vw"
+              type="image/jpeg"
+            />
+
+            <img
+              class="main__section-cartel"
+              src="assets/images/blog/economia.png"
+              loading="lazy"
+              alt="Cartel de arbol con monedas en las raices"
+            />
+          </picture>
+          <figcaption
+            class="blog__main-article-img-figcaption figure-caption text-end"
+          >
+            Tree Growing on Coins - <cite>Arthon meekodong</cite>.
+          </figcaption>
+        </figure>
+        <p class="blog__main-article-text">
+          Además, este enfoque tiene un impacto positivo en la lucha contra el
+          cambio climático. Al reducir la extracción de materias primas y las
+          emisiones asociadas a la producción, la economía circular contribuye
+          significativamente a la disminución de gases de efecto invernadero.
+        </p>
+        <p class="blog__main-article-text">
+          Sin embargo, para que este modelo sea exitoso, es fundamental la
+          colaboración entre gobiernos, empresas y ciudadanos. La educación y la
+          sensibilización juegan un papel clave para fomentar hábitos
+          sostenibles y apoyar políticas que impulsen la transición hacia una
+          economía circular.
+        </p>
+        <p class="blog__main-article-text">
+          La economía circular no es solo una tendencia, sino una necesidad para
+          garantizar un futuro sostenible para las próximas generaciones.
+          ¿Estamos listos para abrazar este cambio?
+        </p>
+      </article>
+      <section class="blog__main-section-related">
+        <h2 class="blog__main-section-related-title">Artículos Relacionados</h2>
+        <div class="blog__main-section-related-list">
+          <article class="blog__main-section-related-list-item">
+            <div
+              class="blog__main-section-related-list-item-card card"
+              style="width: 18rem"
+            >
+              <picture>
+                <source
+                  srcset="
+                    assets/images/speakers/persona1.png?as=webp&width=504 504w,
+                    assets/images/speakers/persona1.png?as=webp&width=252 252w
+                  "
+                  sizes="252px"
+                  type="image/webp"
+                />
+                <img
+                  src="/src/assets/images/speakers/persona1.png"
+                  class="card-img-top"
+                  alt="Imagen de María López"
+                  loading="lazy"
+                  width="252"
+                  height="auto"
+                />
+              </picture>
+              <div class="card-body">
+                <h5 class="card-title">María López</h5>
+                <h6 class="card-subtitle mt-2 mb-2">
+                  Innovación en la gestión de residuos urbanos
+                </h6>
+
+                <a href="#" class="btn btn-primary text-white">+Info</a>
+              </div>
+            </div>
+          </article>
+          <article class="blog__main-section-related-list-item">
+            <div
+              class="blog__main-section-related-list-item-card card"
+              style="width: 18rem"
+            >
+              <picture>
+                <source
+                  srcset="
+                    assets/images/speakers/persona2.png?as=webp&width=504 504w,
+                    assets/images/speakers/persona2.png?as=webp&width=252 252w
+                  "
+                  sizes="252px"
+                  type="image/webp"
+                />
+                <img
+                  class="card-img-top"
+                  src="/src/assets/images/speakers/persona2.png"
+                  alt="Imagen de Javier Gómez"
+                  loading="lazy"
+                  width="252"
+                  height="auto"
+                />
+              </picture>
+              <div class="card-body">
+                <h5 class="card-title">Carlos Fernández</h5>
+                <h6 class="card-subtitle mt-2 mb-2">
+                  El papel de las empresas en la economía circular
+                </h6>
+
+                <a href="#" class="btn btn-primary text-white">+Info</a>
+              </div>
+            </div>
+          </article>
+          <article class="blog__main-section-related-list-item">
+            <div
+              class="blog__main-section-related-list-item-card card"
+              style="width: 18rem"
+            >
+              <picture>
+                <source
+                  srcset="
+                    assets/images/speakers/persona5.png?as=webp&width=504 504w,
+                    assets/images/speakers/persona5.png?as=webp&width=252 252w
+                  "
+                  sizes="252px"
+                  type="image/webp"
+                />
+                <img
+                  class="card-img-top"
+                  src="/src/assets/images/speakers/persona5.png"
+                  alt="Imagen de Ana Martínez"
+                  loading="lazy"
+                  width="252"
+                  height="auto"
+                />
+              </picture>
+              <div class="card-body">
+                <h5 class="card-title">Ana Martínez</h5>
+                <h6 class="card-subtitle mt-2 mb-2">
+                  Diseño sostenible: productos para un futuro circular
+                </h6>
+
+                <a href="#" class="btn btn-primary text-white">+Info</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
+</html>

@@ -1,0 +1,129 @@
+@layer custom {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.blog {
+  container-type: inline-size;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    container-type: inline-size;
+    & :is(h2, h5) {
+      color: var(--bs-primary);
+    }
+
+    &-title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-top: 3rem;
+      text-align: center;
+      width: 80%;
+    }
+    &-intro {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+      width: 80%;
+      &-text {
+        font-size: 1.4rem;
+        font-weight: 300;
+
+        &--resaltado {
+          line-height: 2.4rem;
+          font-weight: 700;
+          font-size: 1.7rem;
+          //font-style: italic;
+
+          color: var(--bs-primary);
+        }
+        @container (max-width: 576px) {
+          margin-top: 2rem;
+        }
+      }
+      @container (max-width: 576px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+    }
+    &-separator {
+      @include separator(var(--bs-primary), 2px, 80%, 3rem auto);
+    }
+    &-text {
+      margin-top: 1rem;
+    }
+    &-section {
+      &-pilares {
+        width: 80%;
+        &-list {
+          list-style: none;
+          padding: 0;
+          margin-top: 2rem;
+
+          &-item {
+            &-text {
+              padding-left: 3.5rem;
+            }
+          }
+        }
+      }
+      &-related {
+        width: 100%;
+        margin-top: 2rem;
+        &-title {
+          width: 80%;
+          margin: 0 auto;
+        }
+        &-list {
+          margin-top: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          gap: 2rem;
+          //padding: 2rem;
+          flex-wrap: wrap;
+          &-item {
+            &-card {
+              &:has(.card-img-top) {
+                border: 2px solid var(--bs-primary);
+                padding: 1rem;
+                border-radius: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &-title {
+        width: 80%;
+      }
+      &-text {
+        width: 80%;
+        &:first-of-type {
+          margin-top: 2rem;
+        }
+        margin-top: 1rem;
+      }
+    }
+    @container (max-width: 1140px) {
+      padding: 2rem 2rem;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.speakers {
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    container-type: inline-size;
+    & :is(.card-title) {
+      color: var(--bs-primary);
+    }
+    &-intro {
+      &-title {
+        margin-top: 3rem;
+        text-align: center;
+      }
+      &-text {
+        padding: 2rem;
+      }
+    }
+
+    &-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      row-gap: 2rem;
+      width: 100%;
+      //padding: 2rem;
+      flex-wrap: wrap;
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 calc((100% - (2 * 2rem)) / 3); // 3 columnas por fila
+        &-card {
+          &-text {
+            opacity: 0;
+            max-height: 0;
+          }
+          &:hover {
+            transform: translateY(-10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            /*  .card-text {
+              //display: block;
+              transition: opacity 3s ease;
+              opacity: 1;
+              max-height: 100%;
+            } */
+          }
+        }
+
+        @container (max-width: 992px) {
+          flex: 1 1 calc((100% - (1 * 2rem)) / 2); // 2 columnas por fila
+        }
+        @container (max-width: 576px) {
+          padding: 1rem;
+          flex: 1 1 100%;
+        }
+      }
+    }
+  }
+}
