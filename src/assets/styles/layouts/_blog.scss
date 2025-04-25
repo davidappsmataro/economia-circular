@@ -116,10 +116,10 @@
       }
       &-text {
         width: 80%;
+        margin-top: 1rem;
         &:first-of-type {
           margin-top: 2rem;
         }
-        margin-top: 1rem;
       }
     }
     @container (max-width: 1140px) {

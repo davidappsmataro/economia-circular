@@ -10,6 +10,8 @@
   &__main {
     height: 100vh;
     width: 100vw;
+    max-width: 1140px;
+    margin: 0 auto;
 
     @supports (display: grid) {
       display: grid;
@@ -24,23 +26,23 @@
     }
   }
   &__video {
-    &-container {
-      //imagen de fondo en el contenedor por si no se puede usar video
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-      background-image: url("/src/assets/images/home/portada.png"); /* Imagen de fondo */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+    //imagen de fondo en el contenedor por si no se puede usar video
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    overflow: hidden;
+    background-image: url("/src/assets/images/home/portada.png"); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &-item {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      overflow: hidden;
+    }
   }
 }
