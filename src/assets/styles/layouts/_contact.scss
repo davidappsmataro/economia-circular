@@ -1,0 +1,33 @@
+.contact {
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    container-type: inline-size;
+    margin-bottom: 3rem;
+    &-title {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    &-text {
+      margin-top: 2rem;
+    }
+    &-datos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      &-mapa {
+        text-align: center;
+      }
+    }
+    &-form {
+      width: 80%;
+      margin: 3rem auto;
+    }
+  }
+}
