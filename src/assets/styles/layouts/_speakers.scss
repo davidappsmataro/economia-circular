@@ -12,12 +12,10 @@
       color: var(--bs-primary);
     }
     &-intro {
+      padding: 2rem;
       &-title {
         margin-top: 3rem;
         text-align: center;
-      }
-      &-text {
-        padding: 2rem;
       }
     }
 
