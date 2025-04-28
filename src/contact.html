@@ -23,8 +23,18 @@
             Información de contacto
           </h2>
           <ul class="contact__main-datos-contacto-list">
-            <li><strong>Email:</strong> info@economiacircular.com</li>
-            <li><strong>Teléfono:</strong> +34 123 456 789</li>
+            <li>
+              <strong>Email:</strong>
+              <a
+                href="mailto:info@economiacircular.com?subject=Consulta sobre economía circular&body=Hola, tengo una consulta sobre..."
+              >
+                info@economiacircular.com
+              </a>
+            </li>
+            <li>
+              <strong>Teléfono:</strong>
+              <a href="tel:+34123456789">+34 123 456 789</a>
+            </li>
             <li>
               <strong>Dirección:</strong> Calle Sant Cugat, 08302 Barcelona,
               España
@@ -46,7 +56,13 @@
       </section>
       <section class="contact__main-form">
         <h2 class="contact__main-info-title">Formulario de Contacto</h2>
-        <form name="contact" method="post" action="/src/success.html" netlify>
+        <form
+          name="contact"
+          method="post"
+          action="/success.html"
+          netlify
+          data-netlify="true"
+        >
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
             <input
