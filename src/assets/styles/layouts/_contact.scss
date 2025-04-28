@@ -9,9 +9,13 @@
     margin: 0 auto;
     container-type: inline-size;
     margin-bottom: 3rem;
+    padding: 2rem;
+    font-size: 1.2rem;
     &-title {
-      margin-top: 3rem;
+      margin-top: 1rem;
       text-align: center;
+      color: var(--bs-primary);
+      color: color(display-p3 0.181 0.52 0.081);
     }
     &-text {
       margin-top: 2rem;
@@ -20,14 +24,40 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
+      width: 100cqw;
       &-mapa {
         text-align: center;
+        max-width: 100%;
+      }
+      @container (max-width: 992px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        &-contacto {
+          &-title {
+            margin-top: 2rem;
+            text-align: center;
+          }
+          &-list {
+            margin-top: 2rem;
+          }
+        }
+        &-mapa {
+          &-title {
+            margin-top: 2rem;
+          }
+        }
       }
     }
     &-form {
-      width: 80%;
+      width: 80cqw;
       margin: 3rem auto;
+      @container (max-width: 992px) {
+        &-title {
+          margin-top: 2rem;
+          text-align: center;
+        }
+      }
     }
   }
 }
