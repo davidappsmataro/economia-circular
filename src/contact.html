@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page3</title>
+    <title>Contacto | Economía circular</title>
     <link rel="stylesheet" href="./assets/styles/main.scss" />
     <!-- do not remove this line! -->
   </head>
@@ -34,7 +34,7 @@
         <div class="contact__main-datos-mapa">
           <h2 class="contact__main-info-title">¿Cómo llegar?</h2>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23889.598619232853!2d2.4379391999999998!3d41.5432704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1745780204677!5m2!1ses!2ses"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.9101235458593!2d2.4350662314911884!3d41.535482104923965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4b51fd32207d9%3A0x2e2c420c24dff6f7!2sRonda%20de%20la%20Rep%C3%BAblica%2C%2008302%20Matar%C3%B3%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1745808775527!5m2!1ses!2ses"
             width="400"
             height="300"
             style="border: 0"
@@ -53,7 +53,9 @@
               type="email"
               class="form-control"
               id="email"
+              name="email"
               placeholder="name@example.com"
+              required
             />
           </div>
           <div class="mb-3">
@@ -62,12 +64,21 @@
               type="text"
               class="form-control"
               id="name"
+              name="name"
               placeholder="David"
+              required
             />
           </div>
           <div class="mb-3">
             <label for="consulta" class="form-label">Consulta</label>
-            <textarea class="form-control" id="consulta" rows="4"></textarea>
+            <textarea
+              class="form-control"
+              name="consulta"
+              id="consulta"
+              placeholder="Escribe tu consulta aquí..."
+              required
+              rows="4"
+            ></textarea>
           </div>
           <div class="mb-3 form-check">
             <input
