@@ -1,0 +1,24 @@
+.btn-primary {
+  @include button-variant(
+    $background: $primary,
+    $border: $primary,
+    $color: $secondary,
+    $hover-background: shade-color($primary, 10%),
+    $hover-border: shade-color($primary, 10%),
+    $hover-color: $secondary,
+    $active-background: shade-color($primary, 20%),
+    $active-border: shade-color($primary, 20%),
+    $active-color: $secondary,
+    $disabled-background: $primary,
+    $disabled-border: $primary,
+    $disabled-color: $secondary
+  );
+}
+
+.bg-primary a {
+  color: $secondary;
+}
+
+.bg-primary a:hover {
+  color: lighten($primary, 10%);
+}

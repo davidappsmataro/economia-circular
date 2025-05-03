@@ -6,6 +6,11 @@
   }
 } */
 
+@layer custom {
+  .btn-primary {
+    color: $secondary;
+  }
+}
 .home {
   &__main {
     width: 100%;
@@ -15,21 +20,30 @@
     margin: 0 auto;
     container-type: inline-size;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 2rem;
+
     @supports (display: grid) {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: 50px minmax(160px, auto) minmax(160px, auto) 1fr 1fr 50px;
       row-gap: 2rem;
+      margin-top: 0px;
+      padding: 0;
     }
 
-    @supports not (display: grid) {
+    /* @supports not (display: grid) {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       margin-top: 10px;
       padding: 2rem;
-    }
+    } */
     &-banner {
       position: relative;
       grid-column: 2 / 6;

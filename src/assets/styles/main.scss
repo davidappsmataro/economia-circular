@@ -31,6 +31,11 @@
 // @import "@some-company/some-node-module";
 
 /**
+ * Import overrides
+ */
+@import "overrides";
+
+/**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */

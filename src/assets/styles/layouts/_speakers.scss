@@ -1,18 +1,85 @@
+/* @layer custom {
+  .btn-primary {
+    --bs-btn-color: var(--bs-secondary) !important;
+  }
+} */
+@layer base {
+  .speakers {
+    &__main {
+      container-type: inline-size;
+    }
+  }
+}
+@layer components {
+  .speakers {
+    &__main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      & :is(.card-title) {
+        color: var(--bs-primary);
+      }
+      /* &-intro {
+        padding: 2rem;
+        &-title {
+          margin-top: 3rem;
+          text-align: center;
+        }
+        &-text {
+          margin-top: 2rem;
+        }
+      } */
+
+      &-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+        width: 100%;
+        //padding: 2rem;
+        flex-wrap: wrap;
+
+        &-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex: 1 1 calc((100% - (2 * 2rem)) / 3); // 3 columnas por fila
+          &-card {
+            &-text {
+              opacity: 0;
+              max-height: 0;
+            }
+            &:hover {
+              transform: translateY(-10px);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+          }
+
+          @container (max-width: 992px) {
+            flex: 1 1 calc((100% - (1 * 2rem)) / 2); // 2 columnas por fila
+          }
+          @container (max-width: 576px) {
+            padding: 1rem;
+            flex: 1 1 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@layer utilities {
+  main {
+    margin-bottom: 5rem;
+  }
+}
+//necesito sobreescribir a bootstrap.
+//los saco de las capas
 .speakers {
   &__main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1140px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 5rem;
-    container-type: inline-size;
-    font-size: 1.2rem;
-    & :is(.card-title) {
-      color: var(--bs-primary);
-    }
     &-intro {
       padding: 2rem;
       &-title {
@@ -21,49 +88,6 @@
       }
       &-text {
         margin-top: 2rem;
-      }
-    }
-
-    &-list {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      row-gap: 2rem;
-      width: 100%;
-      //padding: 2rem;
-      flex-wrap: wrap;
-
-      &-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex: 1 1 calc((100% - (2 * 2rem)) / 3); // 3 columnas por fila
-        &-card {
-          &-text {
-            opacity: 0;
-            max-height: 0;
-          }
-          &:hover {
-            transform: translateY(-10px);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            /*  .card-text {
-              //display: block;
-              transition: opacity 3s ease;
-              opacity: 1;
-              max-height: 100%;
-            } */
-          }
-        }
-
-        @container (max-width: 992px) {
-          flex: 1 1 calc((100% - (1 * 2rem)) / 2); // 2 columnas por fila
-        }
-        @container (max-width: 576px) {
-          padding: 1rem;
-          flex: 1 1 100%;
-        }
       }
     }
   }
