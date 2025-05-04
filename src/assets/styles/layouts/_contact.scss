@@ -1,57 +1,115 @@
-.contact {
-  &__main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1140px;
-    width: 100%;
-    margin: 0 auto;
-    container-type: inline-size;
-    margin-bottom: 3rem;
-    padding: 2rem;
-    font-size: 1.2rem;
-    &-title {
-      margin-top: 1rem;
-      text-align: center;
-      color: var(--bs-primary);
-      color: color(display-p3 0.181 0.52 0.081);
-    }
-    &-text {
-      margin-top: 2rem;
-    }
-    &-datos {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+@layer base {
+  .contact {
+    &__main {
+      container-type: inline-size;
+      max-width: 1140px;
       width: 100cqw;
-      &-mapa {
+      margin: 0 auto;
+    }
+  }
+}
+
+@layer utilities {
+  main {
+    margin-bottom: 5rem;
+  }
+}
+
+@layer components {
+  .contact {
+    &__main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      font-size: 1.2rem;
+      /*  &-title {
+        margin-top: 3rem;
         text-align: center;
-        max-width: 100%;
-      }
-      @container (max-width: 992px) {
-        flex-direction: column;
+        color: var(--bs-primary);
+        color: color(display-p3 0.181 0.52 0.081);
+      } */
+      /*  & :is(&-text, &-datos) {
+        margin-top: 2rem;
+      } */
+
+      &-datos {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 2rem;
-        &-contacto {
+        width: 100cqw;
+
+        /* &-contacto {
+          &-title {
+            margin-bottom: 2rem;
+          }
+        } */
+        &-mapa {
+          text-align: center;
+          max-width: 100cqw;
+          /* &-title {
+            margin: 2rem 0;
+          } */
+        }
+        @container (max-width: 992px) {
+          flex-direction: column;
+          align-items: center;
+          gap: 2rem;
+          /* & :is(&-contacto-title, &-contacto-list, &-mapa-title) {
+            margin-top: 2rem;
+          } */
+        }
+      }
+      &-form {
+        width: 80cqw;
+        /* margin: 3rem auto;
+        &-title {
+          margin: 2rem 0;
+        } */
+        /* @container (max-width: 992px) {
           &-title {
             margin-top: 2rem;
             text-align: center;
           }
-          &-list {
-            margin-top: 2rem;
-          }
+        } */
+      }
+    }
+  }
+}
+.contact {
+  &__main {
+    &-title {
+      margin-top: 3rem;
+      text-align: center;
+      color: var(--bs-primary);
+      color: color(display-p3 0.181 0.52 0.081);
+    }
+    & :is(&-text, &-datos) {
+      margin-top: 2rem;
+    }
+    &-datos {
+      &-contacto {
+        &-title {
+          margin-bottom: 2rem;
         }
-        &-mapa {
-          &-title {
-            margin-top: 2rem;
-          }
+      }
+      &-mapa {
+        &-title {
+          margin: 2rem 0;
+        }
+      }
+      @container (max-width: 992px) {
+        & :is(&-contacto-title, &-contacto-list, &-mapa-title) {
+          margin-top: 2rem;
         }
       }
     }
     &-form {
-      width: 80cqw;
       margin: 3rem auto;
+      &-title {
+        margin: 2rem 0;
+      }
       @container (max-width: 992px) {
         &-title {
           margin-top: 2rem;

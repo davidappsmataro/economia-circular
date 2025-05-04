@@ -1,16 +1,5 @@
 @use "sass:color";
 
-/* $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
-
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%); */
-
-//$mqMinWidth: 420px;
-
 $primary: rgb(0, 156, 132);
 $secondary: #ecfbff;
 
@@ -30,6 +19,7 @@ $link-decoration: none;
 /* $link-color: #ecfbff;
 $link-hover-color: #b6efe6; */
 $btn-color: #ecfbff;
+$badge-font-size: 0.5em;
 
 //breakpoints
 $mqSm: 576px;

@@ -7,6 +7,9 @@
   .speakers {
     &__main {
       container-type: inline-size;
+      max-width: 1140px;
+      width: 100cqw;
+      margin: 0 auto;
     }
   }
 }
@@ -18,6 +21,7 @@
       justify-content: center;
       align-items: center;
       font-size: 1.2rem;
+
       & :is(.card-title) {
         color: var(--bs-primary);
       }
@@ -37,7 +41,7 @@
         justify-content: center;
         align-items: center;
         row-gap: 2rem;
-        width: 100%;
+        width: 100cqw;
         //padding: 2rem;
         flex-wrap: wrap;
 
@@ -46,7 +50,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          flex: 1 1 calc((100% - (2 * 2rem)) / 3); // 3 columnas por fila
+          flex: 1 1 calc((100cqw - (2 * 2rem)) / 3); // 3 columnas por fila
           &-card {
             &-text {
               opacity: 0;
@@ -60,11 +64,11 @@
           }
 
           @container (max-width: 992px) {
-            flex: 1 1 calc((100% - (1 * 2rem)) / 2); // 2 columnas por fila
+            flex: 1 1 calc((100cqw - (1 * 2rem)) / 2); // 2 columnas por fila
           }
           @container (max-width: 576px) {
             padding: 1rem;
-            flex: 1 1 100%;
+            flex: 1 1 100cqw;
           }
         }
       }
