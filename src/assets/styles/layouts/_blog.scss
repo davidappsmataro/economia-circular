@@ -11,10 +11,10 @@
   &__main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    max-width: 1140px;
+    justify-content: space-between;
     width: 100%;
+    max-width: 1140px;
     margin: 0 auto;
     margin-bottom: 5rem;
     font-size: 1.2rem;
@@ -25,27 +25,25 @@
     }
 
     &-title {
+      width: 80cqw;
+      margin-top: 3rem;
       font-size: 2.4rem;
       font-weight: 700;
-      margin-top: 3rem;
       text-align: center;
-      width: 80cqw;
     }
     &-intro {
       display: flex;
       gap: 2rem;
-      margin-top: 2rem;
       width: 80cqw;
+      margin-top: 2rem;
       &-text {
         font-size: 1.4rem;
         font-weight: 300;
 
         &--resaltado {
-          line-height: 2.4rem;
+          font-size: 1.7rem∫;
           font-weight: 700;
-          font-size: 1.7rem;
-          //font-style: italic;
-
+          line-height: 2.4rem;
           color: var(--bs-primary);
         }
         @container (max-width: 576px) {
@@ -54,8 +52,8 @@
       }
       @container (max-width: 576px) {
         flex-direction: column;
-        align-items: center;
         gap: 0;
+        align-items: center;
       }
     }
     &-separator {
@@ -68,9 +66,9 @@
       &-pilares {
         width: 80%;
         &-list {
-          list-style: none;
           padding: 0;
           margin-top: 2rem;
+          list-style: none;
 
           &-item {
             &-text {
@@ -87,19 +85,19 @@
           margin: 0 auto;
         }
         &-list {
-          margin-top: 2rem;
           display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          gap: 2rem;
-          //padding: 2rem;
           flex-wrap: wrap;
+          gap: 2rem;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          margin-top: 2rem;
+
           &-item {
             &-card {
               &:has(.card-img-top) {
-                border: 2px solid var(--bs-primary);
                 padding: 1rem;
+                border: 2px solid var(--bs-primary);
                 border-radius: 0.5rem;
               }
             }
@@ -110,8 +108,8 @@
     &-article {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
 
       &-title {
         width: 80%;

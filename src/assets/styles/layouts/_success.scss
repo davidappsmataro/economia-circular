@@ -7,10 +7,10 @@
     height: 100vh;
     text-align: center;
     &-content {
-      border: 2px solid var(--bs-primary);
-      border-radius: 1rem;
       padding: 3rem;
       margin: 2rem;
+      border: 2px solid var(--bs-primary);
+      border-radius: 1rem;
     }
     &-text {
       margin-top: 2rem;

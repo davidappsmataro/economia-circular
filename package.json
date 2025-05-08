@@ -9,6 +9,7 @@
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean parcel:build",
+    "stylelint": "stylelint src/**/*.scss",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "targets": {
@@ -43,6 +44,10 @@
     "posthtml-include": "^2.0.1",
     "rimraf": "^6.0.1",
     "sharp": "^0.33.5",
+    "stylelint": "^16.19.1",
+    "stylelint-config-recess-order": "^6.0.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-scss": "^6.12.0",
     "svgo": "^3.3.2"
   },
   "dependencies": {

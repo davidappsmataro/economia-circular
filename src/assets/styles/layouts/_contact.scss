@@ -2,8 +2,8 @@
   .contact {
     &__main {
       container-type: inline-size;
-      max-width: 1140px;
       width: 100cqw;
+      max-width: 1140px;
       margin: 0 auto;
     }
   }
@@ -20,8 +20,8 @@
     &__main {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       padding: 2rem;
       font-size: 1.2rem;
       /*  &-title {
@@ -36,8 +36,8 @@
 
       &-datos {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
         width: 100cqw;
 
         /* &-contacto {
@@ -46,8 +46,8 @@
           }
         } */
         &-mapa {
-          text-align: center;
           max-width: 100cqw;
+          text-align: center;
           &-container {
             width: 50cqw;
             height: 300px;
@@ -58,8 +58,8 @@
         }
         @container (max-width: 992px) {
           flex-direction: column;
-          align-items: center;
           gap: 2rem;
+          align-items: center;
           &-mapa {
             &-container {
               width: 80cqw;
@@ -91,9 +91,9 @@
   &__main {
     &-title {
       margin-top: 3rem;
-      text-align: center;
       color: var(--bs-primary);
       color: color(display-p3 0.181 0.52 0.081);
+      text-align: center;
     }
     & :is(&-text, &-datos) {
       margin-top: 2rem;
