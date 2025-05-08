@@ -48,6 +48,10 @@
         &-mapa {
           text-align: center;
           max-width: 100cqw;
+          &-container {
+            width: 50cqw;
+            height: 300px;
+          }
           /* &-title {
             margin: 2rem 0;
           } */
@@ -56,6 +60,12 @@
           flex-direction: column;
           align-items: center;
           gap: 2rem;
+          &-mapa {
+            &-container {
+              width: 80cqw;
+              height: 300px;
+            }
+          }
           /* & :is(&-contacto-title, &-contacto-list, &-mapa-title) {
             margin-top: 2rem;
           } */
