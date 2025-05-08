@@ -109,9 +109,6 @@
 
         &-fondo {
           margin-top: 2rem;
-          @supports (display: grid) {
-            margin-top: 0;
-          }
           position: absolute;
           top: 0;
           left: 0;
@@ -121,13 +118,13 @@
           opacity: 1;
           border-radius: 4rem;
           border: 5px solid var(--bs-secondary);
+          @supports (display: grid) {
+            margin-top: 0;
+          }
         }
 
         &-content {
           margin-top: 2rem;
-          @supports (display: grid) {
-            margin-top: 0;
-          }
           position: relative;
           z-index: 1;
           display: flex;
@@ -137,6 +134,9 @@
           width: 100%;
           height: 100%;
           padding: 2rem;
+          @supports (display: grid) {
+            margin-top: 0;
+          }
         }
         @container (max-width: 992px) {
           grid-column: 4 / 7;
@@ -160,11 +160,11 @@
       }
       &-entradas {
         display: flex;
-
         justify-content: center;
         align-items: center;
         margin-top: 4rem;
         gap: 1rem;
+        border-radius: 4rem;
         @supports (display: grid) {
           margin-top: 0;
           display: grid;
@@ -175,7 +175,6 @@
           gap: 1rem;
         }
 
-        border-radius: 4rem;
         &-title {
           grid-column: 2 / 6;
           grid-row: 2;
@@ -226,10 +225,6 @@
         & :is(&-icono-one, &-icono-two, &-icono-tree) {
           display: none;
 
-          @supports (display: grid) {
-            display: flex;
-          }
-
           justify-content: center;
           align-items: center;
           color: var(--bs-primary);
@@ -237,6 +232,9 @@
           text-align: center;
           width: 100%;
           height: 100%;
+          @supports (display: grid) {
+            display: flex;
+          }
         }
         @container (max-width: 1200px) {
           grid-template-columns: repeat(12, 1fr);
@@ -402,7 +400,7 @@
       z-index: -1;
       width: 100%;
       height: 100%;
-      background-image: url("/src/assets/images/home/portada.png");
+      background-image: url("/src/assets/images/home/portada.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
