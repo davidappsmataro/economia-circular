@@ -5,10 +5,9 @@
 import * as bootstrap from "bootstrap";
 import L from "leaflet";
 //import markerIcon from "leaflet/dist/images/marker-icon.png";
-import markerIcon from "../images/marcador.png";
-
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import "leaflet/dist/leaflet.css";
+import markerIcon from "../images/marcador.png";
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 

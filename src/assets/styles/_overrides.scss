@@ -16,11 +16,12 @@
     $disabled-color: $secondary
   );
 }
-
+//enlaces en fondo primario
 .bg-primary a {
   color: $secondary;
 }
 
+//enlaces en fondo primario hover
 .bg-primary a:hover {
   color: color.adjust($primary, $lightness: 10%);
 }
