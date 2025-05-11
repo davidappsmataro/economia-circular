@@ -4,6 +4,15 @@
     "stylelint-config-recess-order"
   ],
   "rules": {
-    "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$"
+    "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["text-stroke"]
+      }
+    ],
+    "no-empty-source": true,
+    "no-duplicate-selectors": true,
+    "block-no-empty": true
   }
 }
